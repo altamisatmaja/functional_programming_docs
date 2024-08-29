@@ -1,34 +1,41 @@
 # Functional Programming Docs
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240401134437/Dart-vs-Python.webp" width="550">
+## Kontak Kuliah
 
-Berikut adalah materi yang akan diajarkan di mata kuliah `Functional Programming` dalam 1 semester ini.
+### Peraturan Praktikum
 
-Berikut adalah rincian materinya:
+1. Keterlambatan
+   - Terlambat lebih dari 20 menit akan dikenakan sanksi (minus poin keaktifan)
+2. Kehadiran
+   - Presensi wajib menggunakan tanda tangan (non sister)
+3. Surat menyurat
+   - Wajib mengirimkan surat izin berbentuk fisik apabila berhalangan hadir (boleh menyusul ygy)
+4. Lain-lain
+   - Bentuk pelanggaran yang belum tertera akan dikenakan sanksi sesuai kesepakatan asisten praktikum
 
-- [Welcome](lib/0_welcome.md)
-- [Immutable](lib/1_immutable.md)
-- [Pure functions](lib/2_pure_function.md)
-- [Function as First Class Citizen](lib/3_first_class_citizen.md)
-- [Higher Order Function](lib/4_higher_order_function.md)
-- [Built-in Function](lib/5_built_in_function_map_filter_sort_reduce.md)
-- [Recursive as Looping](lib/6_recursive_as_loop.md)
-- [Ternary operator and Recursive](lib/7_ternary_and_recursive.md)
-- [Map](lib/8_map.md)
-- [Filter](lib/9_filter.md)
-- [Sort](lib/10_sort.md)
-- [Reduce](lib/11_reduce.md)
-- [Function Composition and Chaining](lib/12_function_composition_and_chaining.md)
+### Kesepakatan Praktikum
 
-## Bahasa pemrograman
+1. Jadwal
+   - Tetap menyesuaikan kesepakatan Asprak dan Praktikan
+   - Jika bertabrakan dengan jadwal MBKM maka akan disesuaikan kembali
+2. Asprak
+   - A => Bashori & Afif
+   - B => Raka & Raka
+3. Poin Keaktifan
+   - Bertanya dan menjawab seputar materi akan mendapat poin sebanyak 1
+   - Dapat menyelesaikan challenge dari asprak akan mendapat poin sebanyak 3
+   - Seorang praktikan maksimal menerima challenge 2x
+   - Seorang praktikan maksimal memiliki poin keaktifan sebanyak 10 poin
 
-Bahasa pemrograman yang akan digunakan pada mata kuliah `Functional Programming` adalah sebagai berikut:
+### Penting
 
-| Python                                                                                                                                             | Dart                                                                             |
-| :------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------- |
-| <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png?size=48" width="150"> | <img src="https://avatars.githubusercontent.com/u/1609975?s=48&v=4" width="110"> |
-
-## Source functional programming
-
-1. [Dart](https://dart.dev/guides)
-2. [Python](https://docs.python.org/3/)
+1. Asistensi
+   - Tidak ada ketentuan khusus untuk asistensi sedari awal pertemuan hingga akhir (tidak wajib), silahkan menghubungi asprak jika membutuhkan asistensi. Mekanisme jadwal maupun pelaksanaan diserahkan penuh antara asprak dengan praktikan.
+2. Tugas
+   - Cuman sekali
+3. Post Tes
+   - Cuman sekali
+4. UTS
+   - Tidak ada uts praktikum
+5. UAS
+   - Tidak ada uas praktikum
