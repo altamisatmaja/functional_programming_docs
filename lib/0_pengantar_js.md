@@ -29,7 +29,8 @@ Tipe data primitif hanya dapat menyimpan satu nilai pada satu waktu dan tidak da
 2. Tipe data non primitif :
 Tipe data non-primitif dapat menyimpan lebih dari satu nilai pada satu waktu dan dapat diubah. Tipe data non-primitif akan dianggap berbeda meskipun nilainya sama dan dalam urutan yang sama.
 
-Macam tipe data primitif :
+<details>
+<summary>Macam tipe data primitif :</summary>
 
 - String
 ```js
@@ -97,8 +98,10 @@ mahasiswa[nama] = 'atmaja';
 console.log(mahasiswa); // {nama: "altamis", umur: 19, Symbol(): "atmaja"}
 console.log(mahasiswa[nama]); // atmaja
 ```
+</details>
 
-Macam tipe data non primitif :
+<details>
+<summary>Macam tipe data non primitif :</summary>
 
 - Array
 ```js
@@ -120,6 +123,7 @@ const obj = {
   umur: 28,
 };
 ```
+</details>
 
 #### 3. Operator
 
@@ -200,7 +204,9 @@ let nama = function name(param) {
 };
 ```
 
-sintaks penulisan function secara umum
+<details>
+<summary>sintaks penulisan function secara umum</summary>
+  
 ```js
 function genap(num) {
   // num adalah parameter
@@ -208,7 +214,11 @@ function genap(num) {
 }
 genap(2); // 2 adalah argumen
 ```
+</details>
 
+<details>
+<summary>Function Scope</summary>
+  
 Pada javascript kita tidak bisa asal mendeklarasikan variabel untuk digunakan bersama function, terdapat `function scope`. Sebagai contoh :
 ```js
 // contoh 1
@@ -225,10 +235,13 @@ function sapa() {
 console.log(nama); // Uncaught ReferenceError: nama is not defined.
 ```
 Dari contoh diatas dapat disimpulkan sesuatu yang dideklarasikan didalam function tidak dapat digunakan diluar function namun sesuatu yang dideklarasikan diluar function dapat digunakan didalam function.
+</details>
 
 #### 5. Looping
 Pada javascript looping sedikit lebih banyak macamnya daripada bahasa lain seperti python dsb. Diantaranya :
 1. for
+
+   For loop adalah looping yang membaca data dari suatu array atau himpunan data.
 
 syntax :
 ```js
@@ -236,6 +249,15 @@ for (nilaiAwal; kondisiTerminasi; ekspresiAkhir) {
   statement;
 }
 ```
+<details>
+<summary>Penjelasan :</summary>
+
+- nilaiAwal: dapat berupa ekspresi atau deklarasi variabel yang akan dievaluasi sekali sebelum loop dimulai, biasanya deklarasi nilai awal.
+- kondisiTerminasi: ekspresi atau kondisi yang menghentikan perulangan. Ekspresi ini harus mengembalikan nilai false agar perulangan berhenti, jika true perulangan terus dilakukan.
+- ekspresiAkhir: dievaluasi pada akhir setiap iterasi setelah blok statement deksekusi. Biasanya digunakan untuk memperbarui atau menambah nilaiAwal.
+- statement: kode atau statement yang akan dieksekusi pada setiap iterasi selama kondisiTerminasi bernilai true.
+</details>
+
 contoh :
 ```js
 for (let nilaiAwal = 0; nilaiAwal < 5; nilaiAwal++) {
@@ -244,12 +266,22 @@ for (let nilaiAwal = 0; nilaiAwal < 5; nilaiAwal++) {
 ```
 2. for...of
 
+   Perulangan for..of di JavaScript bisa menjadi alternatif for ketika kita ingin mengulang sebuah array atau objek iterable.
+   
 syntax :
 ```js
 for (variable of iterable) {
   statement;
 }
 ```
+<details>
+<summary>Penjelasan :</summary>
+
+- variable: pada setiap iterasi elemen diinisialisasi ke variabel ini. Dapat dideklarasikan menggunakan const, let, atau var.
+- iterable: objek iterable yang ingin diulang, misalnya array.
+- statement: statement yang dieksekusi pada setiap iterasi.
+</details>
+
 contoh :
 ```js
 const buah = ['pisang', 'mangga', 'apel'];
@@ -260,12 +292,22 @@ for (const elemen of buah) {
 ```
 3. for...in
 
+   Untuk for in hampir sama fungsinya dengan for of namun looping ini digunakan untuk perulangan dalam objek
+
 syntax :
 ```js
 for (variabel in objek) {
   statement;
 }
 ```
+<details>
+<summary>Penjelasan :</summary>
+
+- variabel: variabel yang akan diinisialisasi dengan properti objek pada setiap iterasi.
+- objek: objek target yang ingin dilakukan perulangan.
+- statement: statement atau kode yang akan dieksekusi pada setiap iterasi.
+</details>
+  
 contoh :
 ```js
 const mahasiswa = {
@@ -280,12 +322,21 @@ for (const key in mahasiswa) {
 ```
 4. while
 
+   While loop dapat digunakan sebagai alternatif dari for loop apabila pada perulangan tersebut kita tidak mengetahui berapa kali perulangannya, selama kondisi masih terpenuhi maka perulangan tidak akan berhenti
+   
 syntax :
 ```js
 while (kondisi) {
   statement;
 }
 ```
+<details>
+<summary>Penjelasan :</summary>
+
+- kondisi: ekspresi yang dievaluasi disetiap iterasi. Jika true, statement dieksekusi, jika false maka keluar dari perulangan. Jika ekspresi tidak menghasilkan nilai boolean, dikonversi ke boolean secara otomatis sesuai truthy dan falsy.
+- statement: statement atau kode yang dieksekusi selama kondisi bernilai true.
+</details>
+
 contoh :
 ```js
 let n = 1;
@@ -297,12 +348,21 @@ while (n <= 5) {
 ```
 5. do...while
 
+   Do While merupakan perulangan dimana setidaknya suatu statement akan diekseskusi sekali dalam suatu perulangan
+
 syntax :
 ```js
 do {
   statement;
 } while (kondisi);
 ```
+<details>
+<summary>Penjelasan :</summary>
+
+- statement: statement yang dieksekusi setidaknya sekali dan dieksekusi kembali jika kondisi bernilai true.
+- kondisi: kondisi terminasi yang dievaluasi setelah statement dieksekusi. Jika kondisi true maka statement akan dieksekusi kembali, jika false maka keluar dari perulangan.
+</details>
+
 contoh :
 ```js
 let i = 1;
