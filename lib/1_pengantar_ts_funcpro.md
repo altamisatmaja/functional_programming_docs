@@ -95,74 +95,15 @@ function salam(nama: string, pesan?: string): string {
 
 4. Default Parameter
 
-#### Anda juga bisa mendefinisikan parameter default:
+#### Cara mendefinisikan parameter default:
 
 ```ts
 function sambutan(nama: string = "Tamu"): string {
   return `Selamat datang, ${nama}`;
 }
 ```
-<!-- 
-5. Interface
 
-Interface digunakan untuk mendefinisikan struktur objek atau tipe fungsi:
-
-a. Interface untuk Objek
-
-```ts
-interface Pengguna {
-  nama: string;
-  umur: number;
-  aktif?: boolean;
-}
-
-let user: Pengguna = {
-  nama: "Bashori",
-  umur: 40,
-};
-```
-
-b. Interface untuk Fungsi
-
-```ts
-interface FungsiPerhitungan {
-  (x: number, y: number): number;
-}
-
-let kali: FungsiPerhitungan = (x, y) => x * y;
-```
-
-#### 3. Generik dalam TypeScript
-
-#### Generik memungkinkan pembuatan fungsi, kelas, atau interface yang bisa bekerja dengan berbagai tipe data.
-
-```ts
-function identitas<T>(arg: T): T {
-  return arg;
-}
-
-let angka = identitas<number>(10);
-let teks = identitas<string>("Halo");
-```
-
-#### 4. Type Assertion (Penegasan Tipe)
-
-##### TypeScript memungkinkan Anda untuk memaksa tipe variabel menggunakan type assertion:
-
-a. Menggunakan `as`
-
-```ts
-let pesan: any = "Hello";
-let panjangPesan: number = (pesan as string).length;
-```
-
-b. Menggunakan tanda sudut `(<>)`:
-
-```ts
-let panjangPesan: number = (<string>pesan).length;
-``` -->
-
-#### 5. Functional Programming
+#### 4. Functional Programming
 
 Functional Programming (Funcpro) adalah paradigma pemrograman yang memfokuskan pada penggunaan fungsi murni (pure functions), komposisi fungsi, dan tidak adanya efek samping (side effects) dalam pengelolaan data.
 
