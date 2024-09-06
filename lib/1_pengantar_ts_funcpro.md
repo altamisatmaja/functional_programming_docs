@@ -102,7 +102,7 @@ function sambutan(nama: string = "Tamu"): string {
   return `Selamat datang, ${nama}`;
 }
 ```
-
+<!-- 
 5. Interface
 
 Interface digunakan untuk mendefinisikan struktur objek atau tipe fungsi:
@@ -160,7 +160,7 @@ b. Menggunakan tanda sudut `(<>)`:
 
 ```ts
 let panjangPesan: number = (<string>pesan).length;
-```
+``` -->
 
 #### 5. Functional Programming
 
