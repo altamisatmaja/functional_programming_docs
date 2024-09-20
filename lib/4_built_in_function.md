@@ -113,6 +113,8 @@ function printCombinations(str, prefix = '') {
 printCombinations('123');
 ```
 
+![image](https://github.com/user-attachments/assets/3603ce68-41d8-4404-8575-3ebcceb6e0fa)
+
 ## Spread Operator "..."
 Sintaks yang memungkinkan Anda untuk "menyebarkan" elemen-elemen dari sebuah array atau objek ke dalam array atau objek lainnya. Ini sangat berguna dalam berbagai situasi, seperti menggabungkan array, membuat salinan, atau mengubah elemen dalam struktur data.
 
