@@ -39,8 +39,12 @@ Anda bisa membuat helper function compose untuk mempermudah komposisi:
 const compose = (...fns) => x => fns.reduceRight((acc, fn) => fn(acc), x);
 
 const composed = compose(subtract1, add3, multiplyBy2);
+const composed2 = compose(add3, multiplyBy2, subtract1);
+const composed3 = compose(multiplyBy2, subtract1);
 
 console.log(composed(5)); // Output: 12
+console.log(composed2(5)); // Output: 11
+console.log(composed3(5)); // Output: 8
 ```
 
 Fungsi `compose` memungkinkan kita menggabungkan beberapa fungsi secara dinamis dan digunakan berkali-kali.
