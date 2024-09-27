@@ -1,14 +1,6 @@
 # Functional Programming di JavaScript - Function Composition & Chaining
 
-## 1. Pengantar Functional Programming (FP)
-
-Functional Programming adalah paradigma pemrograman yang menekankan evaluasi fungsi dan menghindari perubahan state (immutable). Di dalam JavaScript, FP digunakan untuk membuat kode lebih modular, bersih, dan mudah diuji.
-
-Dua konsep penting dalam FP yang akan kita bahas adalah **Function Composition** dan **Function Chaining**.
-
----
-
-## 2. Function Composition
+## 1. Function Composition
 
 ### Pengertian
 **Function composition** adalah teknik di mana beberapa fungsi digabungkan menjadi satu fungsi besar. Artinya, output dari satu fungsi menjadi input untuk fungsi berikutnya. Ini memungkinkan kita untuk membuat fungsi yang lebih kompleks dengan menggabungkan fungsi yang lebih kecil.
@@ -55,7 +47,7 @@ Fungsi `compose` memungkinkan kita menggabungkan beberapa fungsi secara dinamis 
 
 ---
 
-## 3. Function Chaining
+## 2. Function Chaining
 ### Pengertian
 **Function chaining** adalah teknik di mana beberapa metode dipanggil berurutan pada objek yang sama dalam satu pernyataan, sehingga hasil dari satu metode menjadi input untuk metode berikutnya. Hal ini memungkinkan gaya penulisan kode yang lebih rapi dan efisien.
 
@@ -126,13 +118,13 @@ Pada contoh ini, kita pertama-tama memfilter array, lalu menerapkan `map` untuk 
 
 ---
 
-## 4. Perbedaan Function Composition vs Function Chaining
+## 3. Perbedaan Function Composition vs Function Chaining
 - **Function Composition** digunakan untuk menggabungkan beberapa fungsi berbeda menjadi satu fungsi baru yang lebih kompleks, di mana fungsi pertama menerima input dan fungsi terakhir memberikan output.
 - **Function Chaining** digunakan ketika kita ingin menjalankan serangkaian operasi berurutan pada objek yang sama, di mana setiap metode mengembalikan objek atau nilai baru yang digunakan oleh metode berikutnya.
 
 ---
 
-## 5. Praktik Terbaik dalam Menggunakan Composition & Chaining
+## 4. Praktik Terbaik dalam Menggunakan Composition & Chaining
 1. **Gunakan untuk Membuat Kode Modular**: Pastikan setiap fungsi atau metode memiliki satu tanggung jawab spesifik.
 2. **Hindari Kode Berantakan**: Jangan membuat terlalu banyak fungsi kecil jika tidak diperlukan; tetap fokus pada keterbacaan.
 3. **Pastikan Kode Teruji**: Karena function composition dan chaining sering digunakan dalam banyak alur, penting untuk menguji fungsi individual secara menyeluruh.
